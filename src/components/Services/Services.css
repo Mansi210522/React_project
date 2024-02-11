@@ -1,0 +1,56 @@
+#services {
+  text-align: center;
+  background-color: transparent;
+  padding: 50px;
+  margin: 100px 0;
+}
+
+#services h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:#b9ee58;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.service {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  text-align: center; 
+}
+
+.service img {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+}
+
+.service h3 {
+  margin: 10px 0;
+  color: #8919ab;
+}
+
+.service p {
+  font-size: 14px;
+  color: #ffffff;
+}

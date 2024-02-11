@@ -1,0 +1,40 @@
+.courses-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .courses-list {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .course-item {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .course-item img {
+    width: 200px; 
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .course-item:hover img {
+    transform: rotate(90deg);
+  }
+  
+  .course-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+  }
+  
+  .course-item:hover .course-info {
+    display: block;
+  }
+  

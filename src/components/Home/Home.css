@@ -1,0 +1,49 @@
+body {
+   background-color: rgb(38, 37, 37); 
+
+}
+.Home {
+  text-align: center;
+  padding: 20px;
+}
+
+.Home h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; 
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: blinkUpDown 0.5s infinite alternate; 
+}
+
+.Home::before {
+  content: '';
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-image: url('https://images.pexels.com/photos/8970031/pexels-photo-8970031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-right: 10px; 
+}
+
+@keyframes blinkUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px); 
+  }
+}
+
+.Home h2 {
+  font-size: 4rem;
+  color: #ffffff; 
+}
+
+ 
+  
+  
